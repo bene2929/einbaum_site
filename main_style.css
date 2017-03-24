@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29.10.2016, 10:32:43
+    Author     : Benedikt
+*/
+
+.temp_circle{fill: red;}
+.moist_circle{fill: blue;}
+table{width: 80%; height: 80%}
+.graph{height: 100%}
+html,body{height: 100%; width: 100%;overflow-x: hidden;}
+body {font-family: sans-serif;font-size: 11px;}
+.axis path,
+.axis line {fill: none;stroke: black; shape-rendering: crispEdges; }
+.temp_line{fill: none; stroke: darkred;stroke-width: 1.5px;}
+.moist_line{fill: none; stroke: darkblue;stroke-width: 1.5px;}
+#t_label{fill: darkred}
+#m_label{fill: darkblue}
+text.tooltip {text-anchor: middle; }
+text.tt_moist{fill: darkblue;}
+text.tt_temp{fill: darkred;}
+.sensor_download {cursor: pointer;color:blue;text-decoration:underline;}

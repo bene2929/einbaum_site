@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <script src="./JavaScript/jquery-1.11.3.min.js"></script>
+        <script src="./JavaScript/mustache.js"></script>
+        <script src="./JavaScript/SmartCommunicator.js">
+
+        </script>
+        <script src="./JavaScript/planet_data.js">
+
+        </script>
+        <script type="text/javascript">
+            function start() {
+                init("#interfaceArea");
+            }
+        </script>
+        <style>
+            .sensor{ text-align: center; font-size: 200%  }
+            .main_table{margin-left: auto; margin-right: auto}
+            td.side{width: 40%; height: 200px}
+            td{vertical-align: central}
+            body{font-family: 'Arial';}
+            h1{text-align: center; font-size: 170%}
+        </style>
+        <title>Smart Home</title>
+    </head>
+    <body onload="start()">
+
+        <!--<h1 style="text-align: center; font-size: 300%;">Smart Home</h1>-->
+
+        <h1>Smart Home</h1>
+        <div id="interfaceArea" >
+            <table width="90%" class='main_table' >
+                <tr>
+                    <td id="led0" class='side'>
+                       
+                        <div id="temp0" class="sensor">-</div> 
+                    </td>
+                    <td id="led1" width="20%" rowspan="2">
+                        <div id="moist0" class="sensor">-</div>
+                    </td>
+                    <td id="led2" class="side">
+                        <div id="temp1" class="sensor">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="led3"class="side">
+                        <div id="temp2" class="sensor">-</div>
+                    </td>
+                    <td id="led4" class="side">
+                        <div id="temp3" class="sensor">-</div>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+        <br/>
+         <div style="text-align: center;">
+            <img src="logo_bott.jpg" width="20%" />
+        </div>
+        <div align="center">
+            Entwickelt von Benedit Kantz, Maximilian Huber, Boris Kaiser<br/>Marco Orasch, Bernhard Schnögl, Lukas Markowitsch, Lisa Staller<br />
+            Projekt der HTL
+            Mössingerstraße 
+        </div>
+
+        <div style="display: none">
+            <a href="./setup">Setup</a>
+            <a href="./planet">Planet</a>
+            Debug:
+            <div id="debug">no warnings</div>
+
+            <div id="sat"></div>
+        </div>
+    </body>
+</html>

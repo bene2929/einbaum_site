@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="../JavaScript/jquery-1.11.3.min.js"></script>
+<script src="../JavaScript/mustache.js"></script>
+
+<script src="../JavaScript/planet_data.js">
+	
+</script>
+<script src="../JavaScript/setup_smart.js">
+	
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTXAWAUK6wgApgxZaF0AXeVwMSKMSAwnc&signed_in=true&callback=initMap" async defer></script>
+<title>Smart Home-Setup</title>
+</head>
+<body>
+	Debug:
+	<div id="debug">Debug!</div>
+	<h1>Setup-Values</h1>
+	<button onclick="createDB()">Create DB</button>
+	<br />
+	<div>Drops Database (deletes)!</div>
+	<br />
+	<button onclick="showDB()">Show DB</button>
+	<br/>
+	<div id="db"></div>
+	<br/>
+	<input id="position" type="text"/>
+	<button onclick="searchPos()">Search your Position!</button>
+	<div id="sat" ></div>
+	<button onclick="setupLoc()">Set this as your default home position.</button>
+	<br/>
+	<a href="../">Home</a>
+
+</body>
+</html>
